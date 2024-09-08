@@ -92,18 +92,18 @@ button:hover{
         margin-top: 20px;
     }
     #displayImage {
-        width: 150px; /* Set a fixed width */
-        height: 150px; /* Set a fixed height */
-        overflow: hidden; /* Hide overflow */
+        width: 150px; 
+        height: 150px;
+        overflow: hidden; 
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ccc; /* Optional: add a border */
-        border-radius: 8px; /* Optional: add rounded corners */
+        border: 1px solid #ccc; 
+        border-radius: 8px; 
     }
     #displayImage img {
-        width: 100%; /* Ensure image fits the container width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto; 
     }
     .resume-image {
         max-width: 100%;
