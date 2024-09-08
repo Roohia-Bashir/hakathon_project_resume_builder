@@ -94,8 +94,7 @@ button:hover{
         height: 150px; 
         border: 1px solid #ccc;
         border-radius: 8px; 
-        position: absolute;
-        left: 65rem;
+        position: relative;
     }
     #displayImage img {
         width: 100%; 
