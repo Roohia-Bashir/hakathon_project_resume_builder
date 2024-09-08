@@ -81,10 +81,7 @@ button:hover{
 #profilePic{
     width: 140px;
     height: 170px;
-    border: 1px solid  #3498bd;
-    position: relative;
-    left: 190px;
-    
+    border: 1px solid  #3498bd; 
 }
 .resume-section {
         margin-top: 20px;
