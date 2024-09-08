@@ -1,4 +1,3 @@
-// Ensure this script runs after the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
     // Get form and display elements
     var resumeForm = document.getElementById('resumeForm');
