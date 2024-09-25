@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static_Resume</title>
+    <link rel="stylesheet" href="DynamicStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="mainDiv">
+
+        <!-- Personal Information -->
+        <section>
+            <div class="personal">
+                <div>
+                    <h1><span id="form_name">Roohia Bashir</span></h1>
+                    <h2><span id="jobtitle">Web Developer</span></h2>
+                </div>
+                <img src="./profile pic.jpg" alt="Profile picture">
+            </div>
+            <div class="contact-info">
+                <p class="para"><i class="fas fa-phone"></i> Phone: <span id="phone">03012849720</span></p>
+                <p class="para"><i class="fas fa-envelope"></i> Email: <span id="email">roohiabashir1994@gmail.com</span></p>
+                <p class="para"><i class="fab fa-linkedin"></i> LinkedIn: <span><a id="linkedin" href="https://www.linkedin.com/in/roohia-bashir-a5262b283" target="_blank">Roohia Bashir</a></span></p>
+            </div>
+        </section><hr>
+
+        <!-- Objective -->
+        <section id="objectiveSec">
+            <h2 class="heading">Objective</h2>
+            <p class="contpara">Motivated and dedicated professional seeking to contribute to a dynamic organization by leveraging a strong work ethic and commitment to excellence. Eager to apply my background and enthusiasm to support the team’s goals and drive success in a challenging and rewarding role.</p>
+        </section>
+
+        <!-- Education -->
+        <section id="eduSec">
+            <h2 class="heading">Education:</h2>
+            <p class="contpara"><span id="degree">Bachelor of Science</span></p>
+            <p class="contpara"><span>University of Karachi</span>,<span id="gradeYear">2022</span></p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skillSec">
+            <h2 class="heading">Skills:</h2>
+            <ul>
+                <li><span class="contpara" id="skill1">JavaScript</span></li>
+                <li><span class="contpara" id="skill2">TypeScript</span></li>
+                <li><span class="contpara" id="skill3">HTML & CSS</span></li>
+            </ul>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="workExpSec" class="work-experience">
+            <h2 class="heading">Work Experience:</h2>
+            <p class="contpara"><span id="jobTitleExp">Front-end Developer</span> at <span id="company">ABC Company</span>, <span id="startYear">2021</span> - <span id="endYear">Present</span></p>
+        </section>
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-row share-container">
+        <button class="btn1" id="printBtn">Print</button>
+        <button class="btn1" id="editBtn">Edit</button>
+        <a href="#" id="resumeLink" class="btn">Shareable Resume Link</a>
+        <button class="btn" id="copyLinkBtn">Copy Link</button>
+    </div>
+
+    <script src="DynamicResume.js"></script>
+    <script src="../UserInput/scripts.js"></script>
+</body>
+</html>

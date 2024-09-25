@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #e9ecef;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#mainDiv {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Personal info section */
+.personal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.personal h1 {
+    font-size: 2rem;
+    color: #002147;
+}
+
+.personal h2 {
+    font-size: 1.4rem;
+    color: #0056b3;
+}
+
+.personal .profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #007bff; /* Changed border color for better visibility */
+    background-color: #fff; /* Background color for the profile picture container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-right: 4px solid #007bff; /* Added border on the right side */
+}
+
+.personal .profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; 
+    display: block;
+}
+
+img {
+    font-size: 12px;
+    text-align: center;
+    line-height: 100px;
+    padding: 50px;
+}
+
+.personal img {
+    border: 1px solid #003a75;
+    width: 120px;
+    height: 120px; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Contact info section */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.para {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.para i {
+    color: #002147;
+    margin-right: 8px;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Section headings */
+.heading {
+    font-size: 1.5rem;
+    color: #002147;
+    border-bottom: 1px solid #002147;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Section content */
+.contpara {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+/* Bullet points */
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: '\2022';
+    color: #002147;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Button container styling */
+.button-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of buttons on smaller screens */
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Ensure it doesn't exceed form width */
+    margin: 10px auto; /* Center the button container */
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn1, .btn {
+    background-color: transparent;
+    color: #002147;
+    border: 2px solid #002147;
+    padding: 6px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.btn1:hover, .btn:hover {
+    background-color: #00122e;
+    color: #fff;
+    border-color: transparent;
+    transform: scale(1.05);
+}
+
+.btn1:active, .btn:active {
+    background-color: #003a75;
+    color: #fff;
+    transform: scale(0.98);
+}
+
+.share-container a {
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#eduSec, #workExpSec {
+    margin-top: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .button-row {
+        width: calc(100% - 30px); /* Adjust width for smaller screens */
+        margin-left: 15px; /* Adjust margin for better fit */
+    }
+}

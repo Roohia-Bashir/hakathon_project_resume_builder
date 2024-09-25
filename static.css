@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Style */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 20px;
+    color: #333; /* Dark gray text */
+}
+
+/* Main Container */
+#mainDiv {
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Profile Image */
+img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid #004080; /* Navy blue border */
+}
+
+/* Personal Information Section */
+.personal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.personal h1 {
+    font-size: 36px;
+    color: #00274d; /* Dark navy color */
+}
+
+.personal h2 {
+    font-size: 20px;
+    color: #004080; /* Navy blue color */
+    margin-top: 8px;
+}
+
+/* Heading Style */
+.heading {
+    font-size: 26px;
+    color: #00274d; /* Dark navy color */
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+/* Contact Information */
+.contact-info {
+    margin-bottom: 16px;
+}
+
+.contpara {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+/* Skills Section */
+#skillSec ul {
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+/* LinkedIn Link */
+#linkedin {
+    color: #004080; /* Navy blue color */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Button Container */
+#btnDiv {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    color: #e4e6eb;
+    font-size: larger;
+    text-align: center;
+    background-color: #052449; /* Navy blue background */
+    border-radius: 12px;
+    margin-bottom: 70px;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 500; /* Slightly lighter weight for a more refined look */
+    padding: 10px 20px; /* Slightly larger padding for better click area */
+    margin: 8px;
+    border: none;
+    border-radius: 6px; /* Slightly more rounded corners for a modern look */
+    cursor: pointer;
+    background-color: #004080; /* Navy blue background */
+    color: #ffffff; /* White text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    text-transform: uppercase; /* Uppercase text for a cleaner look */
+    letter-spacing: 0.5px; /* Slight spacing for readability */
+}
+
+.btn:hover {
+    background-color: #003366; /* Darker navy blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.btn:hover {
+    background-color: #308a1e; /* Light gray background on hover */
+}
+
+/* Flexbox Section */
+.sp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #mainDiv, #btnDiv {
+        width: 100%;
+    }
+
+    .personal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        margin-top: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: auto;
+        margin: 2px 0;
+        padding: 5px;
+    }
+}
+
+/* Section Styles */
+#objectiveSec, #eduSec, #skillSec, #workExpSec {
+    display: block;
+}
+
+/* Toggle Section */
+.toggle-section {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px;
+    background-color: #004080; /* Navy blue background */
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.toggle-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-section h3 {
+    font-size: 22px;
+    color: #ffffff; /* White text */
+    margin-bottom: 10px;
+}
+
+.toggle-section p {
+    font-size: 14px;
+    color: #ffffff; /* White text */
+}
+
+/* Toggle Section Buttons */
+.toggle-section .btn {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ffffff; /* White background */
+    color: #022d5e; /* Navy blue text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-section .btn:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    transform: scale(1.05);
+}
