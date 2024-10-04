@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f9; 
+}
+
+.headingStyle {
+    width: 90%;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    margin-top: 60px;
+    padding: 20px;
+    margin: auto;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.myHeading {
+    font-size: 3.75rem;
+    margin-bottom: 20px;
+    color: #003366; 
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 1.25rem;
+    padding: 5px;
+    color: #003366; 
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+#header h2 {
+    font-size: 2.5rem;
+    color: #003366; 
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.p40 {
+    margin-bottom: 20px;
+}
+
+.round {
+    border-radius: 4px;
+}
+
+.anchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.875rem;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: #0066cc; 
+}
+
+.para {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333; 
+}
+
+.zoom {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.zoom:hover {
+    transform: scale(1.02);
+}
+
+footer p {
+    font-size: 0.9375rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #666; 
+}
+
+div {
+    border: 1px solid #ddd; 
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    flex-direction: column;
+    background-color: #ffffff; 
+    border-radius: 4px; 
+}
+
+#staticResume,
+#dynamicResume {
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    background-color: #ffffff; 
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+#subheading {
+    margin-top: 80px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #003366; 
+}
+
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
